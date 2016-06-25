@@ -1,6 +1,6 @@
 # syscall64ref
 
-Search for x64 system calls numbers and function prototype using man pages
+Search for x64 system calls and function prototype using man pages
 
 ## examples
 
