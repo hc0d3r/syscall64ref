@@ -46,8 +46,9 @@ create_table(){
 	done
 
 	start_word=''
-
 	line_len=0
+
+	[ "${f[1]}" == "void" ] && unset f[1]
 
 	for((i=0;i<${#f[@]};i++));do
 		line_len=$((line_len+${#f[i]}))
