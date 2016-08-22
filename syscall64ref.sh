@@ -195,7 +195,7 @@ syscall64ref(){
 }
 
 
-if [[ "$0" != "bash" ]]
+if [[ "$0" != "${BASH_SOURCE[0]}" ]]
 then
 	if [[ $# == 0 ]];then
 		echo "syscallref64 [syscall_name|syscall_number] ..."
