@@ -208,6 +208,5 @@ then
 	syscall64ref "$@"
 
 else
-	echo lol "$0 ${BASH_SOURCE[0]}"
 	check_unistd64
 fi
