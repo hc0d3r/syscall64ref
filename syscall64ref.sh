@@ -195,7 +195,7 @@ syscall64ref(){
 }
 
 
-if [[ "$0" != "${BASH_SOURCE[0]}" ]]
+if [[ "$0" == "${BASH_SOURCE[0]}" ]]
 then
 	if [[ $# == 0 ]];then
 		echo "syscallref64 [syscall_name|syscall_number] ..."
@@ -208,5 +208,6 @@ then
 	syscall64ref "$@"
 
 else
+	echo lol "$0 ${BASH_SOURCE[0]}"
 	check_unistd64
 fi
